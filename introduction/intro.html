@@ -1,0 +1,77 @@
+<html>
+<head>
+<meta charset="utf-8" /> 
+<title> Home - The Last News </title>
+<link rel="stylesheet" href="intro.css">
+</head>
+<body>
+<h1>
+<img src="https://icons-for-free.com/iconfiles/png/512/facebook+logo+logo+website+icon-1320190502625926346.png" width "20" height="20" />
+<img src="https://e7.pngegg.com/pngimages/708/311/png-clipart-twitter-twitter-thumbnail.png" width "20" height="20" />
+</h1>
+<h2>
+<font color="#cccccc">
+<font size="+8">
+<center>
+<strong>
+<b> Hello! <b> 
+</center>
+</strong>
+<br>
+</font>
+</font>
+</h2>
+<font color="#cccccc">
+<font size="+2">
+<center>
+Welcome to <b>NEWS<b> page <br><br>
+This page show the lastest news of football ,politics and technology<br><br>
+Choose one from following choices : <br><br> 
+</font>
+</font>
+<form action="../login/last.html">
+<button>Log In</button> <br><br>
+</form>
+<form action="../register/register.html">
+<button>Creat An Account</button> <br><br>
+</form>
+</center>
+<center>
+<img name="slide" width="400" height="200" />
+<script type="text/javascript"> 
+var i = 0; 			
+var images = [];	
+var time = 3000;	
+images[0] = "https://www.imf.org/external/pubs/ft/fandd/2020/06/images/frieden-1600.jpg";
+images[1] = "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTx2wY6OJLfRzPdR8GCFX-4XlJSaz_DOV2hvw&usqp=CAU";
+images[2] = "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTkjdcGI5QO54lhYWerEyLI6oYJlZ9grXbu4A&usqp=CAU";
+function changeImg(){
+	document.slide.src = images[i];
+	if(i < images.length - 1){
+	  i++; 
+	} else { 
+		i = 0;
+	}
+	setTimeout("changeImg()", time);
+}
+window.onload=changeImg;
+</script>
+</center>
+<div class="sidebar" id="sidebar">
+<div class="toggle" onclick="toggle_div()"></div>
+<ul>
+<font size="+3">
+<li><a href="../login/last.html">Log In</a></li><br>
+<li><a href="../register/register.html">Sign up</a></li><br>
+<li><a href="../about us/about.html">About</a></li>
+</font>
+</ul>
+</div>
+<script type="text/javascript">
+function toggle_div(){
+var element = document.getElementById('sidebar');
+element.classList.toggle('active')
+}
+</script>
+</body>
+</html>

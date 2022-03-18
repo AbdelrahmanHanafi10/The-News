@@ -1,0 +1,99 @@
+body{
+    font-family: 'Open Sans', sans-serif; 
+    background-color: black;
+
+}
+
+.header-area{
+    position: relative;
+    z-index: 2;
+    color:black;
+    display: flex;
+    padding: 20px;
+}
+.header-area .logo{
+    width: 300px;
+    padding: 15px;
+    font-weight:bold;
+    text-decoration: underline;
+}
+.header-area .links
+{
+list-style: none;
+width: 60%;
+text-align: right;
+padding-left:0 ;
+padding-right: 20px;
+font-size: 15px;
+}
+.header-area .links li{
+    display: inline-block;
+    margin-left: 10px;
+}
+.header-area .links li a{
+    color: black;
+    text-decoration: none;
+    transition: .3s;
+}
+.header-area .links li a:active,.header-area .links li a:hover{
+    color: chocolate;
+}
+
+img{
+    float: left;
+    width:250px;
+    height:150px;
+    padding:0px 5px ;
+}
+div.leftfloat{
+    float:left;
+    width: 70%;
+}
+div.rigthfloat{
+    float: right;
+    width: 30%;
+}
+a{
+    color:rgb(78, 76, 76);
+    text-decoration: none;
+    font-weight: bold;
+}
+.large
+{
+    font-size: x-large;
+}
+.large-list
+{
+    font-size: large;
+    color: black;
+}
+a:hover{
+    text-decoration: underline;
+    color: chocolate;
+    transition: .3s;
+}
+th{
+    text-align: left;
+}
+td,th{
+    border-collapse: collapse;
+    border-left:green 8px solid;
+    padding: 8px;
+    margin:20px;
+    background-color:darkgray;
+    font-weight: bold;
+}
+figcaption
+{
+    font-weight: bold;
+    color: rgb(23, 24, 24);
+    padding-right:8px ;
+    padding-bottom:8px ;
+    text-align: right;
+}
+p{
+    color: black;
+    font-weight: 50%;
+    font-size: large;
+    padding-left:8px ;
+}
